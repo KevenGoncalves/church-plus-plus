@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+       android:id="@+id/dashboard"
+        android:title="@string/in_cio"
+        android:icon="@drawable/ph_church"
+        />
+    <item
+       android:id="@+id/despesas"
+        android:title="@string/despesas"
+        android:icon="@drawable/icon_park_outline_expenses"
+        />
+    <item
+       android:id="@+id/membros1"
+        android:title="@string/membros"
+        android:icon="@drawable/octicon_person_16"
+        />
+    <item
+       android:id="@+id/contribuicos"
+        android:title="@string/contribui_es"
+        android:icon="@drawable/iconoir_coins"
+        />
+    <item
+       android:id="@+id/definicoes"
+        android:title="@string/defini_es"
+        android:icon="@drawable/solar_settings_linear"
+        />
+</menu>

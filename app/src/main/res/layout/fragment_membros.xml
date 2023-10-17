@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="340dp"
+            android:layout_height="240dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/membro_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/textView29"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.805"
+            app:layout_constraintStart_toEndOf="@+id/textView29"
+            app:layout_constraintTop_toTopOf="@+id/textView29"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/basil_sort_outline" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Membros"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintVertical_bias="0.043" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="340dp"
+            android:height="60dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="+ Adicionar Membro"
+            android:textSize="16sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomeInput3"
+            app:layout_constraintVertical_bias="0.035" />
+
+        <EditText
+            android:id="@+id/nomeInput3"
+            style="@style/ChurchInput"
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Localização"
+            android:inputType="text|textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/churchNameInput3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/apelidoInput3"
+            app:layout_constraintStart_toStartOf="@+id/emailInput"
+            app:layout_constraintTop_toBottomOf="@+id/churchNameInput3"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <EditText
+            android:id="@+id/apelidoInput3"
+            style="@style/ChurchInput"
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Contacto"
+            android:inputType="text|textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/emailInput"
+            app:layout_constraintEnd_toStartOf="@+id/nomeInput3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/churchNameInput3"
+            app:layout_constraintTop_toBottomOf="@+id/churchNameInput3"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <EditText
+            android:id="@+id/churchNameInput3"
+            style="@style/ChurchInput"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Nome Completo"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view8"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape_cards_teal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard1"
+            app:layout_constraintVertical_bias="0.050000012" />
+
+        <include
+            android:id="@+id/dashboard1"
+            layout="@layout/component_topbar"
+            android:layout_width="340dp"
+            android:layout_height="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.050000012" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Total de Membros"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintTop_toTopOf="@+id/view8"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="245"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintHorizontal_bias="0.929"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintTop_toTopOf="@+id/view8"
+            app:layout_constraintVertical_bias="0.794" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
